@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserHome">
+    <TextView
+        android:id="@+id/tvwelcome"
+        android:text="Welcome"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tvwelcomename"
+        android:text="Shubham"
+        android:paddingLeft="10dp"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvwelcome"
+        android:layout_toRightOf="@+id/tvwelcome"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+    />
+
+    <TextView
+        android:id="@+id/tvaccsummary"
+        android:text="Account summary:"
+        android:layout_below="@+id/tvwelcome"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:id="@+id/tvaccsummarydetails"
+        android:text="1. Juju's Cafe           190/-\n
+2. Kabir Store           120/-\n
+3. Pizza Nation         220/-\n
+4. Matrix Salon         100/-\n
+5. Wrapchik                70/-\n
+6. Night Canteen(M) 80/-\n
+7. Juju's Cafe             120/-\n
+8. Night Canteen(M) 40/-\n
+9. Juju's Cafe             20/-
+"
+
+
+        android:layout_below="@+id/tvaccsummary"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+</RelativeLayout>

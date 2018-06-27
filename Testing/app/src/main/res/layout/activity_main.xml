@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/container"
+    tools:context="com.example.shubham.testapp.MainActivity">
+
+    app:layout_constraintRight_toRightOf="parent"
+    <TextView
+        android:text="Modules!"
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center|top"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <Button
+        android:id="@+id/scanner"
+        android:layout_gravity="center"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:text="QR Code"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:onClick="scanQR"
+        android:textSize="18dp"
+        android:layout_below="@+id/textview1"
+        android:paddingTop="240dp"
+        />
+    <Button
+        android:id="@+id/scanner2"
+        android:layout_gravity="center"
+        android:layout_height="80dp"
+        android:layout_width="250dp"
+        android:text="Bar Code Scanner"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:onClick="scanBar"
+        android:layout_below="@+id/scanner"
+        />
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:text="LoginPage"
+        android:id="@+id/butloginpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/scanner2"
+        android:onClick="launchLoginPage"
+        />
+    <Button
+        android:layout_marginTop="30dp"
+        android:text="User Home Page"
+        android:id="@+id/butuserhome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/butloginpage"
+        android:onClick="launchuserhome"
+        />
+    <Button
+        android:layout_marginTop="30dp"
+        android:text="Merchant Home Page"
+        android:id="@+id/butmerchanthome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/butuserhome"
+        android:onClick="launchmerchanthome"
+        />
+
+
+</RelativeLayout>
